@@ -1,5 +1,6 @@
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
-    let total = quantity * pricePerDroid;
+    const total = quantity * pricePerDroid;
+    
     if (total <= customerCredits) {
         return `"You ordered ${quantity} droids worth ${total} credits!"`;   
     }
